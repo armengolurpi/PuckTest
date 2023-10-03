@@ -14,14 +14,11 @@
       var j = JSON.parse(line);
       console.log("Received JSON: ",j);
       if (j.bat){
-        console.log("Entered bat");
+        elements.bat.setValue(j.bat);
+        elements.temp.setValue(j.temp);
       } else {
-        console.log("Didn't enter bat")
+        elements.light.setValue(j.light*100);
       }
-        
-      elements.bat.setValue(j.bat);
-      elements.temp.setValue(j.temp);
-      elements.light.setValue(j.light*100);
     } catch(e) {
       console.log("Received: ",line);
     }
