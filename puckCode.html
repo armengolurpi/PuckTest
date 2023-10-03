@@ -19,6 +19,14 @@
       } else {
         elements.light.setValue(j.light*100);
        
+        elements.acc_x.setValue(j.accel.acc.x);
+        elements.acc_y.setValue(j.accel.acc.y);
+        elements.acc_z.setValue(j.accel.acc.z);
+
+        elements.gyro_x.setValue(j.accel.gyro.x);
+        elements.gyro_y.setValue(j.accel.gyro.y);
+        elements.gyro_z.setValue(j.accel.gyro.z);
+       
       }
     } catch(e) {
       console.log("Received: ",line);
