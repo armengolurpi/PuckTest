@@ -13,7 +13,7 @@
     try {
       var j = JSON.parse(line);
       console.log("Received JSON: ",j);
-      //elements.bat.setValue(j.bat);
+      elements.bat.setValue(j.bat);
       elements.light.setValue(j.light*100);
       //elements.temp.setValue(j.temp);
     } catch(e) {
